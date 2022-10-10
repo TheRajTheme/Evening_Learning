@@ -1,5 +1,50 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #1a1a1a;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Responsive styles */
+/* @media screen and (min-width: 1400px) {
+    
+} */
+
+/* Common styles */
+.head-txt h1{
+    font-size: 32px;
+}
+
+.head-txt h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.mt-24{
+    margin-top: 24px;
+}
+
+
+/* Schedule Section styles */
+.schedule{
+    background-color: #F7FAFF;
+    text-align: center;
+    padding: 96px 0;
+}
+
+.schedule .schedule-wrapper{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.schedule .schedule-wrapper .schedule-box{
+    width: 300px;
+    background-color: #fff;
+    padding: 0 20px 32px;
+    margin-top: 48px;
 }
