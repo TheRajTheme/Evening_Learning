@@ -1,50 +1,106 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #1a1a1a;
-    font-family: 'Inter', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Common styles */
+.head-txt h1 {
+  font-size: 32px;
+}
+
+.head-txt h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+/* Schedule Section styles */
+.schedule {
+  background-color: #f7faff;
+  text-align: center;
+  padding: 96px 0;
+}
+
+.schedule .schedule-wrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+
+.schedule .schedule-wrapper .schedule-box {
+  position: relative;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 0 20px 32px;
+  margin-top: 48px;
+}
+
+.schedule .schedule-wrapper .schedule-box .icon {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.schedule .schedule-wrapper .schedule-box .icon::after {
+  position: absolute;
+  content: "";
+  height: inherit;
+  width: inherit;
+  background-color: #e4f5ee;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+
+.schedule .schedule-wrapper .schedule-box .icon svg {
+  font-size: 50px;
+  color: #0274be !important;
+  z-index: 1;
+}
+
+.schedule .schedule-wrapper .schedule-box h3 {
+  font-weight: 600;
+  margin: 48px 0 24px;
+}
+
+.schedule .schedule-wrapper .schedule-box p {
+  line-height: 2;
 }
 
 /* Responsive styles */
-/* @media screen and (min-width: 1400px) {
-    
-} */
 
-/* Common styles */
-.head-txt h1{
-    font-size: 32px;
+@media screen and (max-width: 576px) {
+  .schedule .schedule-wrapper .schedule-box {
+    flex-basis: 0 0 calc(100%);
+    width: calc(100%);
+  }
 }
 
-.head-txt h3{
-    font-size: 15px;
-    font-weight: 600;
+@media screen and (min-width: 576px) {
+  .schedule .schedule-wrapper .schedule-box {
+    flex-basis: 0 0 calc(50% - 24px);
+    width: calc(50% - 24px);
+  }
 }
 
-.mt-24{
-    margin-top: 24px;
-}
-
-
-/* Schedule Section styles */
-.schedule{
-    background-color: #F7FAFF;
-    text-align: center;
-    padding: 96px 0;
-}
-
-.schedule .schedule-wrapper{
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-}
-
-.schedule .schedule-wrapper .schedule-box{
-    width: 300px;
-    background-color: #fff;
-    padding: 0 20px 32px;
-    margin-top: 48px;
+@media screen and (min-width: 992px) {
+  .schedule .schedule-wrapper .schedule-box {
+    flex-basis: 0 0 calc(25% - 24px);
+    width: calc(25% - 24px);
+  }
 }
