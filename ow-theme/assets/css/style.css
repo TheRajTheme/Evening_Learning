@@ -15,6 +15,23 @@
     --color-white: #fff;
 }
 
+.heading-text{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    color: var(--color-white);
+}
+
+.collection-btn{
+    text-decoration: none;
+    background-color: var(--color-white);
+    padding: 12px 16px;
+    text-transform: uppercase;
+    color: gray;
+    border-radius: 4px;
+}
+
 /* Navbar styles */
 .navbar{
     position: absolute;
@@ -64,12 +81,8 @@
     margin-bottom: 16px;
 }
 
-.hero h1{
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 300;
+.hero .heading-text{
     font-size: 64px;
-    text-transform: uppercase;
-    margin-bottom: 24px;
 }
 
 .hero p{
@@ -77,11 +90,114 @@
     margin-bottom: 40px;
 }
 
-.hero a{
-    text-decoration: none;
-    background-color: var(--color-white);
-    padding: 12px 16px;
-    text-transform: uppercase;
-    color: gray;
-    border-radius: 4px;
+/* Gallery section style */
+.gallery{
+    position: relative;
+    padding: 36px 24px;
 }
+
+.gallery-wrapper{
+    position: relative;
+    display: flex;
+    height: 900px;
+}
+
+.gallery-wrapper .left{
+    width: calc(50% - 24px);
+    height: 100%;
+    margin: 0 12px;
+}
+
+.gallery-wrapper .left .summer-collection{
+    position: relative;
+    height: inherit;
+    background: linear-gradient(to top, #B15E65, transparent), url("../img/gallery/new-collection-1.jpg") no-repeat top center / cover;
+    border-radius: 12px;
+}
+
+.gallery-wrapper .left .heading-text{
+    font-size: 42px;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-wrapper .right{
+    width: calc(50% - 24px);
+    height: 100%;
+    margin: 0 12px;
+}
+
+.gallery-wrapper .right .top{
+    position: relative;
+    height: calc(50% - 12px);
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.gallery-wrapper .right .men-collection{
+    position: relative;
+    width: calc(50% - 12px);
+    margin-right: 12px;
+    background: linear-gradient(to top, #b15e6598, transparent), url("../img/gallery/men-collection.jpg") no-repeat top center / cover;
+    border-radius: 12px;
+}
+
+.gallery-wrapper .right .men-collection .heading-text{
+    font-size: 42px;
+    position: absolute;
+    left: 50%;
+    bottom: 12%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-wrapper .right .women-collection{
+    position: relative;
+    width: calc(50% - 12px);
+    margin-left: 12px;
+    background: linear-gradient(to top, #b15e65d7, transparent), url("../img/gallery/women-collection-1.jpg") no-repeat top center / cover;
+    border-radius: 12px;
+}
+
+.gallery-wrapper .right .women-collection .heading-text{
+    font-size: 42px;
+    position: absolute;
+    bottom: 10%;
+    margin-left: 50px;
+}
+
+.gallery-wrapper .right .bottom{
+    position: relative;
+    height: calc(50% - 12px);
+    width: 100%;
+    background: linear-gradient(to top, #343847c2, #51555a2f), url("../img/gallery/fashion-accessories.jpg") no-repeat top center / cover;
+    border-radius: 12px;
+    margin-top: 24px;
+}
+
+.gallery-wrapper .right .bottom .shipping{
+    position: relative;
+    margin-left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gallery-wrapper .right .bottom .heading-text{
+    font-size: 42px;
+}
+
+
+.gallery-wrapper .right .bottom h3{
+    margin: 0 0 48px;
+    color: var(--color-white);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+
+
+
