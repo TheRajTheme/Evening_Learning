@@ -1,0 +1,17 @@
+.img-wrapper{
+overflow: hidden; 
+}
+.img-wrapper img:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.gallery .img-wrapper{
+    height: 400px;
+}
+
+.gallery .img-wrapper img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
